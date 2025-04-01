@@ -1,18 +1,40 @@
 {
   "name": "ts-observer-lib",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc --project tsconfig.json",
-    "dev": "ts-node-dev --respawn --project tsconfig.json index.ts"
+    "dev": "ts-node-dev --respawn --project tsconfig.json index.ts",
+    "prepublishOnly": "npm run build"
   },
-  "keywords": [],
+  "keywords": [
+    "typescript",
+    "observer",
+    "observer-pattern",
+    "design-pattern",
+    "events",
+    "event-emitter",
+    "pub-sub",
+    "publisher-subscriber"
+  ],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A TypeScript implementation of the Observer pattern",
   "dependencies": {
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.8.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkwingpatil/ts-observer-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darkwingpatil/ts-observer-lib/issues"
+  },
+  "homepage": "https://github.com/darkwingpatil/ts-observer-lib#readme"
 }
